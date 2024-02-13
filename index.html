@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <style>
+    
+   body{      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-image: url('flower.png');
+   background-size:auto;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    
+      align-items: center;
+      align-items: flex-start;
+      height: 100vh;
+      scroll-behavior: smooth;
+     
+    }
+    .heart-container {
+      
+     
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+    .heart {
+      width: 120px;
+     height: 100px;
+      background-image: url('heart.png'); 
+      background-size: cover;
+      cursor: pointer;
+      display: block;
+     margin-top: 100px;
+     
+      animation: heartbeat 2s infinite alternate;
+    }
+    .message {
+      
+      
+      z-index: 1;
+      
+      align-items: center;
+
+      background-color: rgba(255, 255, 255, 0.9);
+      
+     margin: 0;
+     margin: 50px;
+
+     margin-bottom: -50px;
+     padding: 20px;
+      font-size: 17px;
+      border-radius: 0px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    
+      transform: scaleY(0);
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform 10s ease;
+    
+    }
+    .form-form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .form-form input::placeholder{
+    
+     color: #79d1c6;
+     font-size: 15px;
+    
+        
+    }
+    .form-form textarea::placeholder{
+        
+      
+        color: #79d1c6;
+        font-size: 15px;
+        font-family: poppins;
+
+    }
+
+    .form-form input{
+        color: #030303;
+     font-size: 15px;
+     
+        padding-left: 30px;
+       background: #fcf9f4;
+        border-radius: 10px;
+        border: 1px solid #79d1c6;
+        width: 300px;
+        height: 60px;
+       margin-bottom: 20px;
+    }
+    .form-form textarea{
+        padding-top: 10px;
+        font-size: 15px;
+        
+        padding-left: 30px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: none;
+        height: 120px;
+        width: 500px;
+    }
+    .form-form button{
+     
+      background: #79d1c6;
+        width: 100px;
+        height: 60px;
+        border-radius: 10px;
+       border: 3px solid #fff;
+        color: #fff;
+        
+        font-size: 18px;
+    }
+    .form-form button:hover{
+        background: #fff;
+        border: none;
+        color: #79d1c6;
+    }
+   .write-us-inside h1{
+   font-size: 45px;
+   }
+    .write-us-inside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .write-us-inside img{
+        text-align: center;
+        margin-top: 600px;
+     width: 100%;
+        height: 800px;
+        align-items: center;
+      
+       position: absolute;
+       z-index: -1;
+
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.2); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="heart-container">
+  
+  <div class="message" id="loveMessage">
+    <p>My dearest Mahlet,
+      <br>
+
+      I hope this website finds you well and brings a smile to your face. I know that Valentine's Day is just a commercial holiday, but I couldn't resist the urge to write you this love letter this is because we can't meet in person sadly. I want to express my love for you every chance I get, because you mean everything to me. You are literally my blood veins, and I can't imagine a day without you by my side.
+      
+     <br><br> You are perfect inside and out. Your naivety, respectfulness, and optimism are qualities that make me fall in love with you more and more each day. I adore every single part of you - from your cute hands to your long hair, from your beautiful face to your gorgeous soul.
+      
+     <br><br> Lately, I find myself daydreaming about our future together. I envision us cuddling all day, playing with our kids, and spending eternity in each other's arms. The thought of this sometimes brings tears to my eyes because I am overwhelmed with love for you.
+      
+     <br><br> I feel like my prayers have been answered by God when He brought you into my life. You are the perfect woman who not only respects her family and God but also respects me. I promise to give you the entire world because I know that you would do the same for me.
+      
+     <br><br> I want to spend every single day with you, kissing your lips and eating rice together (even if it's a bad joke). I am certain that we will have a wonderful life together, be great parents and raise Liverpool fans (again another bad joke), have a dog, dinner dates every week, and live an amazing life filled with love and happiness.
+      
+     <br><br> Mahlet Belhu, I love you from the depths of my heart. My love for you stretches from Earth to the sun and back again. I would give up the world for you because you mean everything to me. No matter what happens in life, I will continue loving you endlessly.
+      
+     <br><br> I am here to serve and cherish you forever and ever. You are my one true love, and I can't wait to spend the rest of my days loving you unconditionally.
+      
+     <br><br> can't wait too see you saturday With all my love,
+      
+     <br><br> Your lover Bereket</p>
+    <br><br>
+    <div class="form-form">
+      <form action="https://formsubmit.co/info@geonetsystems.com" method="POST">
+        <input name="name" type="text"  placeholder="write here if u have anything to say, natey" >  <br> 
+        
+        <br>
+        <button type="submit" class="btnn">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="heart" onclick="showMessage()"></div>
+  <br><br>
+  <div class="contact">
+   
+  </div>
+</div>
+
+<script>
+  function showMessage() {
+  
+    var message = document.getElementById('loveMessage');
+    var h= document.getElementById('heart');
+   
+    if (message.style.display === 'none') {
+      message.style.display = 'block';
+      h.style.display = 'none';
+    } else {
+      message.style.display = 'none';
+    }
+    
+  }
+</script>
+
+</body>
+</html>
+
+
