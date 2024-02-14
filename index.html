@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+ 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love Letter</title>
@@ -10,13 +12,13 @@
     
    body{      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-image: url('flower.png');
-background-size: auto;
-width:100%;
+
+     
       margin: 0;
       padding: 0;
-      
-      
+    
       align-items: flex-start;
+     
       scroll-behavior: smooth;
      
     }
@@ -24,7 +26,6 @@ width:100%;
       
      
      display: flex;
-    
      flex-direction: column;
      align-items: center;
      justify-content: center;
@@ -48,14 +49,13 @@ width:100%;
       
       align-items: center;
 
-     width:cover;
-      color: #fff;
-     margin: 70px;
-     margin-bottom:-60px;
-      padding:40px;
-     font-family:poppins;
      
-      
+      color: #fff;
+     margin: 0;
+     font-family: poppins;
+   margin: 30px;
+   margin-bottom: -60px;
+   padding: 40px;
       font-size: 17px;
       border-radius: 0px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     .form-form input::placeholder{
     
      color: #599e96;
-     font-size: 25px;
+     font-size: 15px;
+     font-family: poppins;
      text-align: center;
     
         
@@ -91,9 +92,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     .form-form textarea::placeholder{
         
       
-        color: #79d1c6;
-        font-size: 17px;
-        font-family: poppins;
+      color: #599e96;
+     font-size: 15px;
+     font-family: poppins;
+     text-align: center;
 
     }
 
@@ -105,8 +107,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
        background: #fcf9f4;
         border-radius: 10px;
         border: 1px solid #79d1c6;
-        width: 600px;
-        height: 120px;
+        width: 250px;
+        height: 80px;
        margin-bottom: 20px;
     }
     .form-form textarea{
@@ -117,7 +119,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         margin-bottom: 20px;
         border-radius: 10px;
         border: none;
-        height: 120px;
+        height: 150px;
         width: 500px;
     }
     .form-form button{
@@ -166,11 +168,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   </style>
 </head>
 <body>
+ 
 
 <div class="heart-container">
+
   
   <div class="message" id="loveMessage">
-    <p>My dearest Mahlet,
+    <p>Good Morning natey, how is you!
       <br>
 
       I hope this website finds you well and brings a smile to your face. I know that Valentine's Day is just a commercial holiday, but I couldn't resist the urge to write you this love letter this is because we can't meet in person sadly. I want to express my love for you every chance I get, because you mean everything to me. You are literally my blood veins, and I can't imagine a day without you by my side.
@@ -190,40 +194,55 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
      <br><br> can't wait too see you saturday With all my love.
      <br><br> i hope i made you a little bit happy😊.
       
-     <br><br> Your lover Bereket</p>
+     <br><br> Your lover Bereket
 
     <br><br>
-    also the flowers in the background are for you my lady<br> click the heart again to enjoy the flowers.<br><br>
+   </p><br>
+    <p>Write down if you have anything to say, natey 😘</p>
     <div class="form-form">
       <form action="https://formsubmit.co/bereketmolalgnadugna@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
-        <input name="name" type="text"  placeholder="write here if u have anything to say, natey 😘" >  <br> 
+      
+        <input name="name" type="text">  <br> 
         
         <br>
         <button type="submit" class="btnn">Send</button>
       </form>
+      <br>
+      
     </div>
+   <br> also the flowers in the background are for you my lady<br> click the heart again to enjoy the flowers.✌️
   </div>
-  <div class="heart" onclick="showMessage()"></div>
+  <div id="heart1" class="heart" onclick="showMessage()"></div>
   <br><br>
   <div class="contact">
    
   </div>
 </div>
 
+<audio autoplay loop id="audio" src="sound.mp3"></audio>
+
+
+
 <script>
   function showMessage() {
   
     var message = document.getElementById('loveMessage');
-    var h= document.getElementById('heart');
+    var h= document.getElementById('audio');
+    h.play();
+    
    
     if (message.style.display === 'none') {
       message.style.display = 'block';
-      h.style.display = 'none';
+     
     } else {
       message.style.display = 'none';
+      
     }
     
+    $('#heart1').on('click', function() {
+  $('#myAudio')[0].play();
+});
   }
 </script>
 
